@@ -8,6 +8,7 @@ const Navbar = () => {
       <Link to='/home'>Домашняя страница</Link>
       <Link to='/about'> О сайте</Link>
       <Link to='/photo'> Фото</Link>
+      <Link to='/log'> Лог</Link>
       <Link to='/posts'> Посты</Link>
     </div>
   );
