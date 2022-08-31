@@ -4,6 +4,7 @@
 import About from '../pages/About';
 import Home from '../pages/Home';
 import Photo from '../pages/Photo';
+import Posts from '../pages/Posts';
 
 // export const privateRoutes = [
 //   { path: '/', element: <Login /> },
@@ -18,5 +19,5 @@ export const publicRoutes = [
   { path: '/home', element: <Home /> },
   { path: '/about', element: <About /> },
   { path: '/photo', element: <Photo /> },
-  { path: '/posts', element: <Photo /> },
+  { path: '/posts', element: <Posts /> },
 ];
