@@ -18,4 +18,5 @@ export const publicRoutes = [
   { path: '/home', element: <Home /> },
   { path: '/about', element: <About /> },
   { path: '/photo', element: <Photo /> },
+  { path: '/posts', element: <Photo /> },
 ];
