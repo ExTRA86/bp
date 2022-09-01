@@ -1,0 +1,21 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.post__list {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.post__item {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  align-content: space-between;
+}
