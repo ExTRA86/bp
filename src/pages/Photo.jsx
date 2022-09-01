@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './PhotoStyle.css';
 
 const Photo = () => {
   const [photos, setPhotos] = useState([]);
@@ -7,17 +8,22 @@ const Photo = () => {
       .then(response => response.json())
       .then(json => setPhotos(json.slice(0, 10)));
   }, []);
-  console.log(photos);
 
   return (
-    <div>
-      <h1>Photo 2</h1>
-      {photos.map(photo => (
-        <div>
-          <img src={photo.thumbnailUrl} alt='' key={photo.id}></img>
-          <span>{photo}</span>
-        </div>
-      ))}
+    <div className='photos'>
+      <div className='title'>
+        <h1>Photo 2</h1>
+      </div>
+      <div className='list'>
+        {photos.map(photo => (
+          <div key={photo.id} className='pic'>
+            <img src={photo.thumbnailUrl} alt=''></img>
+            <div className='desc'>
+              <span>{photo.title}</span>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
