@@ -1,13 +1,18 @@
 .photos {
   display: flex;
   flex-direction: column;
-  background-color: aqua;
+  background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1613277098_33-p-sinii-fon-perekhodyashchii-40.jpg');
 }
 
-.photos img {
+.smallImg {
   border-radius: 5px;
-  width: 150px;
+  width: 146px;
   height: 150px;
+}
+
+.bigImg {
+  max-width: 90vw;
+  max-height: 90vh;
 }
 
 .title {
@@ -20,11 +25,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0px 5px;
+  box-shadow: 0 10px 20px black;
 }
 
 .pic {
-  border: 2px solid black;
-  border-radius: 5px;
+  /* border: 2px solid black; */
+  /* border-radius: 5px; */
   padding: 2px;
   margin: 5px 0px;
   display: block;
@@ -33,4 +39,10 @@
 
 .desc {
   display: flex;
+}
+
+.textT {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
 }
