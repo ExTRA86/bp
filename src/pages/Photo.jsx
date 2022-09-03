@@ -10,9 +10,6 @@ const Photo = () => {
     setModal(true);
     setCurrent(img);
   };
-  // const imgList = img => {
-  //   setCurrent(img);
-  // };
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/photos`)
       .then(response => response.json())
@@ -26,14 +23,18 @@ const Photo = () => {
       </div>
       <div className='list'>
         {photos.map(photo => (
-          <div key={photo.id} className='pic' onClick={() => bigImg(photo.url)}>
+          <div
+            key={photo.id}
+            className='pic'
+            onClick={() => bigImg(photo.url, photo.title)}
+          >
             <img className='smallImg' src={photo.thumbnailUrl} alt='' />
           </div>
         ))}
         <Modal visible={modal} setVisible={setModal}>
           <div>
             <img className='bigImg' src={current} alt='' />
-            <button>Вперед</button>
+            <button></button>
           </div>
         </Modal>
       </div>
